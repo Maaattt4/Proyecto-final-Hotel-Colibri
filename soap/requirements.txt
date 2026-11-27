@@ -1,0 +1,4 @@
+lxml
+zeep
+# spyne 2.14 (PyPI) no corre con Python 3.12+; se instala la version de GitHub, igual que en las actividades
+git+https://github.com/arskom/spyne.git@af96bf95feb7950617640671f8aba9654f31acd3
