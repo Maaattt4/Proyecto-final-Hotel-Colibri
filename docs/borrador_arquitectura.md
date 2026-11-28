@@ -145,15 +145,4 @@ sequenceDiagram
 | FINALIZADA | `ReservationConfirmed` |
 | CANCELADA | `ReservationCancelled` |
 
-**Propiedades propias:** `estadoHotel` (string): estado exacto del ciclo de vida del hotel; existe porque schema.org no distingue entre confirmada, en curso y finalizada.
 
-## 7. Decisiones y lecciones **(pendiente)**
-
-Se redacta al final del proyecto.
-
-## Dudas abiertas para el profesor
-
-1. **Fallo de la BD después de un cobro aprobado:** en la sección 4 proponemos compensar con `reembolsarPago`. ¿Es suficiente explicarla, o se espera implementarla?
-2. **Desactivar habitación:** ¿es aceptable `DELETE /habitaciones/{id}` con semántica de desactivación (204), o prefiere `PATCH` con `activa=false`?
-3. **Acciones del ciclo de vida:** usamos una URI por acción: `POST /reservas/{id}/pagar|facturar|cancelar|registrar-llegada|registrar-salida`. ¿Es el estilo que busca, en lugar de un `PUT` de `estado`?
-4. **Python:** el enunciado pide 3.11 y spyne 2.14 de PyPI; en nuestras máquinas (Python 3.14/3.15) spyne 2.14 no importa y usamos la versión de GitHub (2.15.0a0). ¿Se acepta?
