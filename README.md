@@ -47,8 +47,4 @@ cd soap
 Resultados esperados según el enunciado: 5,400 MXN → 300.00 USD, 257.14 EUR, 415.38 CAD; moneda `JPY` → `Client.MonedaNoSoportada`; monto 0 → `Client.MontoInvalido`.
 
 
-## Uso de inteligencia artificial
-
-Usamos Claude y Gemini como apoyo para la documentación, para resolver dudas, para funciones concretas, para pedir ideas y darle forma al proyecto, y como ayuda y guía para elaborar el código.
-
 
